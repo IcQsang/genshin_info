@@ -39,7 +39,7 @@ class _ElementListPageState extends State<ElementListPage> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/images/Element_${ElementList[index]}.png',height: 40)
+                        'assets/images/Element_${up(ElementList[index])}.png',height: 40)
                     ,
                       Text(
                         '${ElementList[index]}',
@@ -53,6 +53,11 @@ class _ElementListPageState extends State<ElementListPage> {
             );
           }),
     );
+  }
+  String up(String str_in){
+    var out ="";
+    out+=  "${str_in[0].toUpperCase()}${str_in.substring(1)}";
+    return out;
   }
 
   Future<List> _load() async {

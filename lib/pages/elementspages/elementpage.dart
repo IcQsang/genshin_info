@@ -18,10 +18,10 @@ class _ElementPageState extends State<ElementPage> {
   var first = true;
 
   Widget build(BuildContext context) {
-    var NationName = ModalRoute.of(context)!.settings.arguments as String;
+    var ElementName = ModalRoute.of(context)!.settings.arguments as String;
     if (first) {
-      var Nation_F = _load(NationName);
-      Nation_F.then((value) {
+      var Element_F = _load(ElementName);
+      Element_F.then((value) {
         Element = value;
         setState(() {
           _isLoading = false;
@@ -39,7 +39,7 @@ class _ElementPageState extends State<ElementPage> {
         : Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.lightBlueAccent,
-              title: Text(NationName),
+              title: Text(ElementName),
             ),
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -16,10 +16,10 @@ class _ArtifactPageState extends State<ArtifactPage> {
   var first = true;
 
   Widget build(BuildContext context) {
-    var charactername = ModalRoute.of(context)!.settings.arguments as String;
+    var artifactname = ModalRoute.of(context)!.settings.arguments as String;
     if (first) {
-      var character_F = _load(charactername);
-      character_F.then((value) {
+      var artifact_F = _load(artifactname);
+      artifact_F.then((value) {
         artifact = value;
         setState(() {
           _isLoading = false;
@@ -38,7 +38,7 @@ class _ArtifactPageState extends State<ArtifactPage> {
         : Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightBlueAccent,
-        title: Text(charactername),
+        title: Text(artifactname),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
