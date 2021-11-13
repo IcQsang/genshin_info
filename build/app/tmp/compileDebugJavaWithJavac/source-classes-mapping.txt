@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/genshin_info/MainActivity.java
+ com.example.genshin_info.MainActivity
+com/example/genshin_info/BuildConfig.java
+ com.example.genshin_info.BuildConfig

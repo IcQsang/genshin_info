@@ -12,6 +12,13 @@ class CharacterResult {
       this.birthday);
 
   factory CharacterResult.fromJson(var json) {
+    if("Traveler".contains(json['name'])){
+      return
+        CharacterResult(
+            json['name'], json['vision'], json['weapon'], json['nation'],
+            json['rarity'],
+            "unknow");
+    }
     return
       CharacterResult(
           json['name'], json['vision'], json['weapon'], json['nation'],

@@ -21,36 +21,38 @@ class _HomePageState extends State<HomePage> {
       title: Text('Genshin Impact'),
 
     ),drawer: Drawer(
-    child: ListView(
-    padding: EdgeInsets.zero,
-      children: [
-        ListTile(
-          title: _buildDrawerItem(Icon(Icons.home), 'home'),
-          onTap: () => _showSubPage(0),
-          selected: _subPageIndex == 0,
-        ),
-        ListTile(
-          title: _buildDrawerItem(Icon(Icons.person), 'Characters'),
-          onTap: () => _showSubPage(1),
-          selected: _subPageIndex == 1,
-        ),
-        ListTile(
-          title: _buildDrawerItem(Icon(Icons.view_in_ar), 'artifacts'),
-          onTap: () => _showSubPage(2),
-          selected: _subPageIndex == 2,
-        ),
-        ListTile(
-          title: _buildDrawerItem(Icon(Icons.blur_on), 'elements'),
-          onTap: () => _showSubPage(3),
-          selected: _subPageIndex == 3,
-        ),
-        ListTile(
-          title: _buildDrawerItem(Icon(Icons.flag), 'nations'),
-          onTap: () => _showSubPage(4),
-          selected: _subPageIndex == 4,
-        ),
-      ],
+    child: SafeArea(
+      child: ListView(
+      padding: EdgeInsets.zero,
+        children: [
+          ListTile(
+            title: _buildDrawerItem(Icon(Icons.home), 'home'),
+            onTap: () => _showSubPage(0),
+            selected: _subPageIndex == 0,
+          ),
+          ListTile(
+            title: _buildDrawerItem(Icon(Icons.person), 'Characters'),
+            onTap: () => _showSubPage(1),
+            selected: _subPageIndex == 1,
+          ),
+          ListTile(
+            title: _buildDrawerItem(Icon(Icons.view_in_ar), 'artifacts'),
+            onTap: () => _showSubPage(2),
+            selected: _subPageIndex == 2,
+          ),
+          ListTile(
+            title: _buildDrawerItem(Icon(Icons.blur_on), 'elements'),
+            onTap: () => _showSubPage(3),
+            selected: _subPageIndex == 3,
+          ),
+          ListTile(
+            title: _buildDrawerItem(Icon(Icons.flag), 'nations'),
+            onTap: () => _showSubPage(4),
+            selected: _subPageIndex == 4,
+          ),
+        ],
 
+      ),
     ),
     ),
 

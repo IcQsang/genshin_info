@@ -50,7 +50,7 @@ class _NationPageState extends State<NationPage> {
                           border: Border.all(color: Colors.blueAccent)),
                       child: Center(
                         child: Text(
-                          "Name:${Nation.name}",
+                          "${Nation.name}",
                           style: TextStyle(fontSize: fontsize),
                         ),
                       ))),

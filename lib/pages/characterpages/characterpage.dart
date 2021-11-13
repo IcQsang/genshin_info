@@ -28,8 +28,13 @@ class _CharacterPageState extends State<CharacterPage> {
       first = false;
     }
     var birth;
-    if (!_isLoading) {
-      birth = character.birthday.split("-");
+    if (!_isLoading ) {
+      if(character.name != "Traveler"){
+        birth = character.birthday.split("-");
+      }
+      else {
+        birth = ["","00","00"];
+      }
     }
     var fontsize = 30.0;
     return _isLoading
