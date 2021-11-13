@@ -68,9 +68,9 @@ class _HomePageState extends State<HomePage> {
   Widget _buildSubPage() {
     switch (_subPageIndex) {
       case 0: // home page
-        return Center(
+        return const Center(
             child: Text(
-              'THIS IS A HOME PAGE',
+               'Welcome to Genshin-Info',
             ));
       case 1:
         return CharacterListPage();
