@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var _isLoading = false;
   var _subPageIndex = 0;
 
   @override
