@@ -52,6 +52,7 @@ class _ElementPageState extends State<ElementPage> {
                                 border: Border.all(color: Colors.blueAccent)),
                             child: Center(
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
                                     "Name:${Element.name}",
@@ -71,12 +72,14 @@ class _ElementPageState extends State<ElementPage> {
                         border: Border.all(color: Colors.blueAccent)),
                     child: Center(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Text(
                           "reaction",
                           style: TextStyle(fontSize: fontsize),
+                          textAlign: TextAlign.center,
                         ),
-                        Column(children: createReaction(),)
+                        Column(children: createReaction(),crossAxisAlignment: CrossAxisAlignment.stretch,)
                       ],
                     ))),
               ],
@@ -92,6 +95,7 @@ class _ElementPageState extends State<ElementPage> {
         allElement += e + " ";
       }
       ans.add(Container(
+
         decoration: BoxDecoration(
             border: Border.all(color: Colors.blueAccent)),
         child: Column(
